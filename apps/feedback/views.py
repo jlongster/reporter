@@ -136,19 +136,28 @@ def give_feedback(request, ua, type):
     return jingo.render(request, template, data)
 
 
-@forward_mobile
-@vary_on_headers('User-Agent')
-@enforce_ua(beta=False)
+# @forward_mobile
+# @vary_on_headers('User-Agent')
+# @enforce_ua(beta=False)
+# @cache_page
+# def feedback(request, ua):
+#     """
+#     The index page for beta version feedback, which shows links to the happy
+#     and sad feedback pages.
+#     """
+#     template = 'feedback/%sbeta_index.html' % (
+#         'mobile/' if request.mobile_site else '')
+#     return jingo.render(request, template)
+
 @cache_page
-def feedback(request, ua):
+def feedback(request):
     """
-    The index page for beta version feedback, which shows links to the happy
+    The new index page for version feedback, which shows links to the happy
     and sad feedback pages.
     """
-    template = 'feedback/%sbeta_index.html' % (
+    template = 'feedback/%sindex-new.html' % (
         'mobile/' if request.mobile_site else '')
     return jingo.render(request, template)
-
 
 @cache_page
 def download(request):

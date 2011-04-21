@@ -186,9 +186,9 @@ MINIFY_BUNDLES = {
         ),
 
         # Feedback for Firefox release versions
-        'release': (
-            'css/libs/reset-min.css',
-            'css/release.css',
+        'feedback': (
+            'css/libs/reset2.css',
+            'css/feedback.css',
         ),
         'release-mobile': (
             'css/libs/reset-min.css',
@@ -222,11 +222,9 @@ MINIFY_BUNDLES = {
         ),
 
         # Release versions feedback
-        'release': (
+        'feedback': (
             'js/libs/jquery.min.js',
-            'js/libs/jquery.scrollto.min.js',
-            'js/libs/jquery.NobleCount.js',
-            'js/release.js',
+            'js/feedback.js',
         ),
     },
 }
