@@ -40,3 +40,9 @@ def smiley(style, page=None):
     return jinja2.Markup(
         u'<span title="%s" class="smiley %s %s">%s</span>' % (
             title, style, page, character))
+
+@register.filter
+def field_attrs(field_inst, **kwargs):
+    """Adds html attributes to django form fields"""
+    field_inst.field.widget.attrs.update(kwargs)
+    return field_inst

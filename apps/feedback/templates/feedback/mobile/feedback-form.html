@@ -1,4 +1,3 @@
-
 <section id="{{ type }}">
   
   {% if form.errors %}
@@ -41,7 +40,13 @@
         </header>
         
         <div class="field">
-          {{ form.description }}
+          {% if type == 'idea' %}
+            {% set placeholder = 'Enter your idea here.' %}
+          {% else %}
+            {% set placeholder = 'Enter your feedback here.' %}
+          {% endif %}
+
+          {{ form.description|field_attrs(placeholder=placeholder) }}
           {{ form.description.errors }}
         </div>
         
@@ -80,4 +85,3 @@
   </article>
 
 </section>
-

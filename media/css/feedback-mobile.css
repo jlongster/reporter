@@ -4,6 +4,7 @@ html {
     font-family: "Droid Serif", Georgia, Arial, sans-serif;
     font-size: 14px;
 }
+
 body {
     min-height: 480px;
     background: none;
@@ -18,9 +19,11 @@ section {
     position: relative;
     display: none;
 }
+
 section:target {
     display: block;
 }
+
 #thanks {
     display: block;
 }
@@ -32,11 +35,11 @@ section:target {
     margin: 0 auto;
 }
 
-
 nav {
     display: block;
     height: 0;
 }
+
 nav a {
     position: absolute;
     overflow: hidden;
@@ -47,8 +50,6 @@ nav a {
     height: 32px;
     background: url(../img/home.png) no-repeat center center;
     text-indent: -1000em;
-}
-nav a:active {
 }
 
 section > header {
@@ -66,36 +67,38 @@ section > header {
     font-size: 16px;
     line-height: 16px;
 }
-section > header h1 {
-}
 
 article header {
     position: relative;
 }
+
 article header p {
     margin-top: 9px;
     line-height: 18px;
 }
+
 article header p strong {
     color: #333;
     font-weight: bold;
 }
+
 article header p:first-child {
     margin-top: 0;
     line-height: 18px;
 }
+
 article header p.alt {
     display: block;
     margin-top: 10px;
     font-size: 12px;
 }
+
 article header p.alt span {
     position: relative;
     padding: 4px 2px;
     background: #e3ebf6;
 }
-article header p.alt a {
-}
+
 article header p.alt a:after {
     content: '';
     position: absolute;
@@ -104,9 +107,11 @@ article header p.alt a:after {
     top: -6px;
     bottom: -6px;
 }
+
 article header.inset {
     min-height: 45px;
 }
+
 article header.inset:before {
     /* placeholder */
     content: '';
@@ -117,10 +122,10 @@ article header.inset:before {
     height: 48px;
     background: url(../img/type-mobile.png) no-repeat 0 0;
 }
+
 article header.inset p {
     margin-left: 55px;
 }
-
 
 article {
     min-height: 275px;
@@ -132,19 +137,21 @@ article {
     color: #666;
     -moz-box-sizing: border-box;
 }
-article.inset {
-}
+
 article .field {
     position: relative;
     margin: 25px 0;
 }
+
 article .choices {
     margin: 25px 0;
     font-size: 18px;
 }
+
 article .choices li {
     position: relative;
 }
+
 article .choices li:before {
     content: '';
     position: absolute;
@@ -154,12 +161,14 @@ article .choices li:before {
     height: 45px;
     background: rgba(0,0,0,.1);
 }
+
 article .choices li span {
     display: table-cell;
     height: 60px;
     vertical-align: middle;
     padding-left: 55px;
 }
+
 article .choices li small {
     display: block;
     margin-bottom: 2px;
@@ -167,9 +176,11 @@ article .choices li small {
     font-family: "droid sans", helvetica, arial, sans-serif;
     font-size: 12px;
 }
+
 article .choices li a {
     line-height: 21px;
 }
+
 article .choices li a:before {
     content: '';
     position: absolute;
@@ -178,13 +189,16 @@ article .choices li a:before {
     top: 0;
     bottom: 0;
 }
+
 article .submit {
     margin-top: 20px;
 }
+
 article label {
     display: block;
     margin-bottom: .25em;
 }
+
 article .char-count {
     position: absolute;
     right: 0;
@@ -193,17 +207,20 @@ article .char-count {
     line-height: 13px;
     color: #838E98;
 }
+
 article .warning {
     display: block;
     font-family: "droid sans", helvetica, arial, sans-serif;
     font-size: 12px;
     line-height: 16px;
 }
+
 article .warning span {
     padding: 1px 0;
     background: #ffc;
     color: #666;
 }
+
 article input[type=url],
 article input[type=text],
 article textarea {
@@ -220,6 +237,7 @@ article textarea {
     font-size: 14px;
     color: #333;
 }
+
 article input[type=url]:-moz-placeholder,
 article input[type=text]:-moz-placeholder,
 article textarea:-moz-placeholder {
@@ -232,11 +250,13 @@ article input[type=text]:disabled {
     color: #999;
     text-decoration: line-through;
 }
+
 article textarea {
     line-height: 1.2;
     resize: none;
     height: 5em;
 }
+
 article button {
     display:block;
     position: relative;
@@ -257,18 +277,18 @@ article button {
     border: 0;
     cursor: pointer;
 }
+
 article button:active {
     top: 2px;
     box-shadow: 0px 1px 0 #438814,
     inset 0 1000px 0 rgba(255,255,255,.25);
 }
+
 article button:disabled {
     background: -moz-linear-gradient(#d6d6d6, #c3c3c3);
     box-shadow: 0px 3px 0 #bababa;
     text-shadow: 0 -1px 0 #c4c4c4;
 }
-
-
 
 footer {
     padding: 18px 15px 15px;
@@ -279,40 +299,32 @@ footer {
     line-height: 1.5;
     text-align: center;
 }
+
 footer a {
     font-weight: bold;
     color: inherit;
     text-decoration: none;
 }
+
 footer p {
     margin-top: 1em;
 }
 
-
-#intro article {
-}
-#intro .choices li {
-}
 #intro .choices li:before {
     top: 7px;
     width: 46px;
     height: 48px;
     background: url(../img/type-mobile.png) no-repeat 0 0;
 }
+
 #intro #top-happy:before { background-position: 0 0; }
 #intro #top-sad:before { background-position: 0 -50px; }
 #intro #top-idea:before { background-position: 0 -100px; }
 
-
-#sad {
-}
 #sad header:before {
     background-position: 0 -50px;
 }
 
-
-#idea {
-}
 #idea header:before {
     background-position: 0 -100px;
 }
@@ -320,12 +332,11 @@ footer p {
     height: 8em;
 }
 
-#thanks article {
-}
 #thanks .choices li:before {
     top: 7px;
     background: url(../img/thanks.png) no-repeat 0 0;
 }
+
 #thanks #thanks-feedback:before { background-position: 0 0; }
 #thanks #thanks-dashboard:before { background-position: 0 -50px; }
 #thanks #thanks-twitter:before { background-position: 0 -100px; }
