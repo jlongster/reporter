@@ -1,0 +1,25 @@
+{% extends "base_mobile.html" %}
+
+{% block page_title %}"{{ opinion.description|truncatewords(15) }}"{% endblock %}
+{% block body_id %}opinion{% endblock %}
+
+{% block header %}
+<ul>
+  <!--
+  --><li><a class="selected" href="#feed">{# Title for the list of messages. #}{{ _('Feed') }}</a></li><!--
+  --><li><a class="" href="#stats">{{ _('Statistics') }}</a></li><!--
+  --><li><a class="" href="#trends">{{ _('Trends') }}</a></li><!--
+  -->
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="col middle wide">
+  <div id="messages" class="block">
+  {{ message_list((opinion,)) }}
+  </div>
+</div>
+
+<a class="back" href="#">&laquo; Back to Feed</a>
+
+{% endblock %}

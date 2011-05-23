@@ -360,3 +360,22 @@ body {
 .pager .next > * {
     -moz-border-radius: 0 16px 16px 0;
 }
+
+#opinion a.back,
+#opinion a.back:visited {
+    color: #295D8A;
+    text-shadow: 0 1px 0 rgba(255,255,255,.25);
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+#opinion .message .body {
+    font-size: 24px;
+}
+
+#opinion .message .meta {
+    font-size: 12px;
+    margin-top: 8px;
+}
+

@@ -117,7 +117,9 @@ def thanks(request):
 @cache_page
 def opinion_detail(request, id):
     o = get_object_or_404(Opinion, pk=id)
-    return jingo.render(request, 'feedback/opinion.html', {'opinion': o})
+    template = 'feedback/%sopinion.html' % (
+        'mobile/' if request.mobile_site else '')
+    return jingo.render(request, template, {'opinion': o})
 
 
 def save_opinion_from_form(request, type, ua, form):
